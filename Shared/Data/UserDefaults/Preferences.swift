@@ -11,7 +11,7 @@ import UIKit
 
 enum Preferences {
 	static var installPathChangedCallback: ((String?) -> Void)?
-	static let defaultInstallPath: String = "https://api.palera.in"
+	static let defaultInstallPath: String = "https://api.lxink.cn"
 	
 	@Storage(key: "Feather.UserSpecifiedOnlinePath", defaultValue: defaultInstallPath)
 	static var onlinePath: String? { didSet { installPathChangedCallback?(onlinePath) } }
